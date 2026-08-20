@@ -9,7 +9,7 @@ def line_up(name: str, number: int) -> str:
         Formatted announcement string.
     """
     
-    if number % 100 in (11, 12, 13):
+    if number % 100 in {11, 12, 13}:
         suffix: str = 'th'
     else:
         suffix = {1: 'st', 2: 'nd', 3:'rd'}.get(number % 10, 'th')
